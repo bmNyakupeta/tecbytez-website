@@ -1,0 +1,123 @@
+/* Blog layout: Excerpt 
+------------------------- */
+.post_layout_excerpt {
+	position:relative;
+	margin-bottom: 4rem;
+}
+.post_layout_excerpt:not(.sticky) .post_date {
+	display: none;
+}
+.post_layout_excerpt .style-date {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	display: block;
+	width: 70px;
+}
+.post_layout_excerpt .wrap-style {
+	padding-left: 70px;
+}
+.post_layout_excerpt .style-date span {
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+.post_layout_excerpt .style-date .first {
+	font-weight: 600;
+	font-size: 2.941em;
+	line-height: 1em;
+}
+.post_layout_excerpt .style-date .second {
+	font-size: 13px;
+	line-height: 1em;
+	font-weight: 500;
+	margin-top: 6px;
+}
+.post_layout_excerpt:not(.sticky) {
+	padding-bottom: 3.8rem;
+	border-bottom: 1px solid #eee;
+}
+.post_layout_excerpt:not(.sticky):last-child {
+	border: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.post_layout_excerpt.sticky {
+	padding: 3em;
+}
+.post_layout_excerpt .post_featured {
+	display: inline-block;
+}
+.post_layout_excerpt.post_format_audio .post_featured.without_thumb,
+.post_layout_excerpt.post_format_gallery .post_featured.without_thumb {
+	display:block;
+}
+.post_layout_excerpt .post_header {
+	margin: 0;
+	position:relative;
+}
+.post_layout_excerpt .post_header .post_price {
+	width: auto;
+	@include abs-rt;
+	@include font(2.5em, 1.5em);
+}
+.post_layout_excerpt .post_title {
+	margin: 0;
+	font-size: 2em;
+	font-weight: 600;
+}
+.post_layout_excerpt .post_meta {
+	margin-top: 1.1rem;
+}
+.post_layout_excerpt.cat-off .post_meta {
+	margin-top: 1.4rem;
+}
+.post_layout_excerpt .post_header + .post_content {
+	margin-top:1.35rem;
+}
+
+
+// First post large in the Classic and Masonry
+body[class*="blog_style_classic"] .post_layout_excerpt,
+body[class*="blog_style_masonry"] .post_layout_excerpt {
+	margin-bottom: 3em;
+}
+
+.post_layout_excerpt .post_meta_categories {
+	position: absolute;
+	bottom: 22px;
+	left: 22px;
+	z-index: 8;
+}
+.post_layout_excerpt .post_meta_categories > a {
+	@include border-radius(3px);
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 16px;
+	padding: 4px 11px;
+	margin: 5px 2px 0 0;
+	vertical-align: top;
+}
+.post_layout_excerpt.cat-on .post_meta .post_categories {
+	display: none;
+}
+.post_layout_excerpt .slider_pagination_wrap {
+	display: none;
+}
+.post_layout_excerpt.format-quote blockquote:before {
+	top: 1.3em;
+	left: 1.4em;
+}
+.post_layout_excerpt.format-quote blockquote {
+	padding: 2.05rem 3rem 2em 6rem;
+}
+.post_layout_excerpt.format-quote .post_header + .post_content {
+	margin-top: 1.45rem;
+}
+
+.post_layout_excerpt .post_featured {
+	max-width: 100%;
+	width: auto;
+	display: inline-block;
+}

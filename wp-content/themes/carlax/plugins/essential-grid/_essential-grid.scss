@@ -1,0 +1,57 @@
+/* Essential Grid styles
+----------------------------------------------------------------- */
+
+.esg-grid i.eg-icon-search:before {
+	content: '\e97f';
+	margin: 0;
+	font-family:$theme_icons !important;
+}
+.esg-grid i.eg-icon-plus:before {
+	content: '\e980';
+	margin: 0;
+	font-family:$theme_icons !important;
+}
+
+
+.esg-grid .eg-simple-extra-element-0:hover,
+.esg-grid .eg-simple-extra-element-0,
+
+.esg-grid .eg-item-skin-simple-element-1:hover,
+.esg-grid .eg-item-skin-simple-element-0:hover,
+.esg-grid .eg-item-skin-simple-element-1,
+.esg-grid .eg-item-skin-simple-element-0 {
+	width: 50px !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	@include box-sizing(border-box);
+	padding: 0 !important;
+}
+
+
+.esg-starring {
+	vertical-align: top;
+}
+.esg-starring .star-rating, .esg-starring-page .star-rating {
+	width: 6em;
+}
+
+.flat-light .esg-filters .esg-sortbutton-order,
+.flat-light .esg-filters .esg-cartbutton-order {
+	line-height:36px;
+	margin:0;
+}
+.flat-light .esg-filters .esg-sortbutton {
+	padding-right: 0;
+}
+
+.esgbox-overlay {
+	z-index: 228010 !important;
+}
+.esgbox-opened {
+	z-index: 228030 !important;
+}
+
+
+.esg-pagination {
+	margin-top: 3.1em;
+}
